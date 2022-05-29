@@ -9,6 +9,6 @@ export async function login (email,senha) {
         where ds_email 		    =   ?
         and ds_senha		    =   ?`
 
-    const resp = await con.query(comando, [email, senha])
-    const linhas = resp[0];
+    const [linhas] = await con.query(comando, [email, senha])
+    return linhas[0];
 }

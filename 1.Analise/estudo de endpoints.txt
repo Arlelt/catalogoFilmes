@@ -28,7 +28,6 @@ request
     "avaliacao": 0.0,
     "lancamento": "1290-12-23",
     "disponível":true,
-    "imagem": "",
     "usuario": 0
 }
 
@@ -40,9 +39,23 @@ response
     "avaliacao": 0.0,
     "lancamento": "1290-12-23",
     "disponível":true,
-    "imagem": "",
     "usuario": 0
 }
+
+//////////////////////////////////////////////////////////
+
+(2.1)
+
+/POST       /filme/:id/imagem      
+
+request body (form)
+{
+    
+    "imagem": "",
+}
+
+response (204)
+--sem conteudo
 
 //////////////////////////////////////////////////////////
 
