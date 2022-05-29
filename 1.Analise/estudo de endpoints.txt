@@ -1,0 +1,122 @@
+(1)
+
+/POST       /usuario/login
+
+request
+{
+    "email": "",
+    "senha": ""
+}
+
+response 
+{
+    "id": "",
+    "email": "",
+    "nome": ""
+}
+
+//////////////////////////////////////////////////////////
+
+(2)
+
+/POST       /filme      
+
+request 
+{
+    "nome": "",
+    "sinopse": "",
+    "avaliacao": 0.0,
+    "lancamento": "1290-12-23",
+    "disponível":true,
+    "imagem": "",
+    "usuario": 0
+}
+
+response 
+{
+    "id": 1,
+    "nome": "",
+    "sinopse": "",
+    "avaliacao": 0.0,
+    "lancamento": "1290-12-23",
+    "disponível":true,
+    "imagem": "",
+    "usuario": 0
+}
+
+//////////////////////////////////////////////////////////
+
+(3) 
+
+/PUT        /filme/:id
+
+request 
+{
+    "nome": "",
+    "sinopse": "",
+    "avaliacao": 0.0,
+    "lancamento": "1290-12-23",
+    "disponível":true,
+    "imagem": "",
+    "usuario": 0
+}
+
+response (204)
+-- no content
+
+//////////////////////////////////////////////////////////
+
+(4) /DELETE         /filme/:id
+
+response (204)
+
+//////////////////////////////////////////////////////////
+
+(5)
+
+/GET            /filme
+
+response 
+[
+    {
+    "nome": "",
+    "avaliacao": 0.0,
+    "lancamento": "1290-12-23",
+    "disponível":true,
+    "usuario": 0
+    }
+]
+
+//////////////////////////////////////////////////////////
+
+(6)
+
+/GET        /filme/busca?nome = xx
+
+response (200)
+[
+{
+    "nome": "",
+    "avaliacao": 0.0,
+    "lancamento": "1290-12-23",
+    "disponível":true,
+    "usuario": 0
+}
+}
+
+//////////////////////////////////////////////////////////
+
+(7)
+
+/GET        /filme/:id
+
+response (200)
+{
+    "nome": "",
+    "sinopse": "",
+    "avaliacao": 0.0,
+    "lancamento": "1290-12-23",
+    "disponível":true,
+    "imagem": "",
+    "usuario": 0
+}
